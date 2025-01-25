@@ -12,7 +12,7 @@ const ShowComments = () => {
     const [selectedComment, setSelectedComment] = useState(null);
 
     useEffect(() => {
-        const ws = new WebSocket("ws://localhost:3000/ws");
+        const ws = new WebSocket("ws://127.0.0.1:3000/ws");
 
         ws.onmessage = async (event) => {
             console.log("Event:", event.data.text());

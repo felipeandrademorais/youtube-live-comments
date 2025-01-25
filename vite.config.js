@@ -3,7 +3,7 @@ import { WebSocketServer } from "ws";
 
 export default defineConfig({
     server: {
-        port: 3000, // Porta para o servidor Vite
+        port: 3000,
     },
     plugins: [
         {

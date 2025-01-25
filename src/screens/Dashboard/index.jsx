@@ -59,7 +59,7 @@ const Dashboard = () => {
     };
 
     const handleShowComment = (comment) => {
-        const ws = new WebSocket("ws://localhost:3000/ws");
+        const ws = new WebSocket("ws://127.0.0.1:3000/ws");
         ws.onopen = () => {
             ws.send(JSON.stringify(comment)); // Envia o comentário ao WebSocket
             console.log("Comentário enviado:", comment);
